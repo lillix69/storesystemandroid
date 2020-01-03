@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/theme_red"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="订单结算"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_marginLeft="15dp"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/i_back" />
+
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/ordercode_view"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/bg_color"
+    android:layout_below="@+id/topview"
+    >
+
+    <TextView
+        style="@style/detail_title_text4"
+        android:text="订单编号" />
+
+    <TextView
+        android:id="@+id/tv_ordercode"
+        style="@style/detail_subtitle_text6"
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/ordercode_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="客户姓名" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tel_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/name_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="客户手机" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/remark_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/tel_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="备注" />
+
+        <TextView
+            android:id="@+id/tv_remark"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator_line"
+        android:layout_below="@+id/remark_view"
+        />
+    <RelativeLayout
+        android:id="@+id/allcost_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/line"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="报价总金额" />
+
+        <TextView
+            android:id="@+id/tv_allcost"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pay_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/allcost_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="付款方式" />
+
+        <ImageView
+            android:id="@+id/img1"
+            style="@style/detail_arrow" />
+
+        <TextView
+            android:id="@+id/tv_pay"
+            style="@style/detail_subtitle_text2"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img1"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/paycost_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/pay_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="实付金额" />
+
+        <ImageView
+            android:id="@+id/img2"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_paycost"
+            style="@style/detail_subtitle_text2"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img2"
+            android:hint="请输入实付金额"
+            android:textColorHint="@color/theme_grey"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discount_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/paycost_view"
+        >
+
+        <TextView
+            android:id="@+id/tv_discounttitle"
+            style="@style/detail_title_text4"
+            android:text="优惠金额" />
+
+        <TextView
+            android:id="@+id/tv_discount"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="确认结算"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:background="@color/theme_red"
+        />
+
+
+</RelativeLayout>

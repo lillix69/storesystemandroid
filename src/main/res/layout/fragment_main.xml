@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:background="@color/theme_red"
+        android:layout_height="46dp"
+        >
+        <RelativeLayout
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/half_white_text"
+            >
+            <ImageView
+                android:id="@+id/searchimg"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/i_search"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@+id/searchimg"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="型号名称/规格/分类/序列号"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/i_scan"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nameview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topview"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="欢迎您"
+            android:textColor="@color/theme_red"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:id="@+id/btn_notice"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/img_dot"
+            android:layout_centerVertical="true"
+            android:background="@drawable/i_help"
+            />
+        <ImageView
+            android:id="@+id/img_refresh"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_toLeftOf="@+id/btn_notice"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_refresh"
+            />
+        <ImageView
+            android:id="@+id/img_dot"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/btn_config"
+            android:background="@drawable/noticedot"
+            android:layout_marginRight="6dp"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/btn_config"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/i_config"
+            />
+
+        <ImageView
+            android:id="@+id/img_addmodel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/img_refresh"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/i_admodel"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listview_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nameview"
+        android:divider="@color/white"
+        android:dividerHeight="5dp"
+        android:background="@color/white"
+        />
+
+
+</RelativeLayout>

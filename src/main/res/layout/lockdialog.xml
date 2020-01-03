@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/black"
+    android:text="请输入锁屏密码"
+   android:layout_above="@+id/edt_lockcode"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="30dp"
+    />
+
+    <EditText
+        android:id="@+id/edt_lockcode"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/grey_border_textview"
+        android:gravity="center"
+        android:textColor="@color/theme_dark_grey"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/edt_lockcode"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/theme_red"
+        android:text="确 认"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+</RelativeLayout>

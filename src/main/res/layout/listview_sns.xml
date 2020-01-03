@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/clear"
+    >
+    <TextView
+        android:id="@+id/tv_modelsns"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/theme_dark_grey"
+android:text="1234353463"
+        />
+    <Button
+        android:id="@+id/btn_print"
+        android:layout_width="68dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+     android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@color/theme_red"
+        android:text="打印"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

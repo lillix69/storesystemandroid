@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/tv_modelname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/tv_guige"
+
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        />
+    <TextView
+        android:id="@+id/tv_guige"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="规格："
+        android:textSize="16sp"
+
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/theme_light_grey"
+        android:gravity="center_vertical|right"
+        />
+    <TextView
+        android:id="@+id/tv_salecount"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/tv_cost"
+        android:layout_below="@+id/tv_modelname"
+        android:text="销售数量："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        />
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tv_modelname"
+        android:text="销售单价："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        android:gravity="right"
+
+        />
+    <TextView
+        android:id="@+id/tv_storecount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="已发货数量："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+     android:layout_below="@+id/tv_salecount"
+      android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_sns"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="165dp"
+        android:layout_below="@+id/tv_salecount"
+        android:text="查看出库序列号"
+        android:textSize="16sp"
+        android:textColor="@color/theme_blue"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+

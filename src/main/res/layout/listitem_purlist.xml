@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    >
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_choose_bg" />
+
+    <TextView
+        android:id="@+id/tv_ordercode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="采购单号："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="40dp"
+      />
+    <TextView
+        android:id="@+id/tv_orderdate"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       android:layout_below="@+id/tv_ordercode"
+        android:layout_marginLeft="40dp"
+        android:text="下单日期:2019-12-12"
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+
+        />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="采购总数："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        android:layout_below="@+id/tv_orderdate"
+        />
+    <TextView
+        android:id="@+id/tv_showmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_count"
+        android:text="查看采购型号"
+        android:textSize="16sp"
+        android:textColor="@color/theme_blue"
+        android:layout_below="@+id/tv_orderdate"
+        />
+    <TextView
+        android:id="@+id/tv_allcost"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_orderdate"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:text="采购总价："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="备注："
+        android:textSize="16sp"
+        android:textColor="@color/theme_light_grey"
+        android:layout_below="@+id/tv_count"
+        />
+</RelativeLayout>

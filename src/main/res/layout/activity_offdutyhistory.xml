@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="下班报表历史"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/i_back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/filterview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/topview"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/selectdateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:text="日期"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/theme_dark_grey" />
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/selectdateTitle"
+            android:background="@drawable/selectdate_bg" />
+
+        <TextView
+            android:id="@+id/tv_timestart"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/selectdateTitle"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_timeend"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/tv_timestart"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/statusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectdateTitle"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="14dp"
+            android:text="状态"
+            android:textSize="16sp"
+            android:textColor="@color/theme_dark_grey" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="90dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/selectdateTitle"
+            android:layout_toRightOf="@+id/statusTitle"
+            android:background="@drawable/status_bg" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:layout_below="@+id/selectdateTitle"
+            android:layout_toRightOf="@+id/statusTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="全部"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/selectdateTitle"
+            android:layout_toRightOf="@+id/tv_status"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="7dp"
+            android:text="查 询"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@color/theme_red"
+            />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/showview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filterview"
+       android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sep_line"/>
+        <include
+            layout="@layout/list_titlebar"
+            android:id="@+id/table_title"/>
+
+        <ListView
+            android:id="@+id/listview_offdutyhistory"
+            android:layout_below="@+id/table_title"
+            android:background="@color/sep_line"
+            android:padding="1dp"
+            android:divider="@color/sep_line"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_nohistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="没有查询到相关下班报表历史！"
+        android:visibility="gone"
+        />
+    </RelativeLayout>

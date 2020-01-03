@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="入库单明细"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/i_back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/topview"
+        android:id="@+id/codeview"
+        android:background="@color/bg_color"
+        >
+
+        <TextView
+            style="@style/detail_title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="入库单号" />
+
+
+        <TextView
+            android:id="@+id/tv_purchasecode"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator_line"
+        android:layout_below="@+id/codeview"
+        android:layout_marginLeft="15dp"
+        />
+    <RelativeLayout
+        android:id="@+id/dateview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/line1"
+        >
+
+        <TextView
+            style="@style/detail_title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="入库日期" />
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/seperator_line"
+        android:layout_below="@+id/dateview"
+        android:layout_marginLeft="15dp"
+        />
+    <RelativeLayout
+        android:id="@+id/userview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/line2"
+        >
+
+        <TextView
+            style="@style/detail_title_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="入库人" />
+
+
+        <TextView
+            android:id="@+id/tv_username"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/userview"
+        android:background="@color/seperator_line" />
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/detail_title_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@+id/line3"
+        android:text="入库物料信息" />
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/t1"
+        android:background="@color/seperator_line" />
+    <ListView
+        android:id="@+id/listview_models"
+        android:layout_below="@+id/line4"
+        android:background="@color/white"
+        android:divider="@color/sep_line"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="下班报表"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/i_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_summery"
+       android:layout_below="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+android:textColor="@color/theme_dark_grey"
+        />
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/tv_summery"
+        android:layout_margin="20dp"
+        android:background="@color/theme_red"
+        android:text="查看更多"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/t1"
+        android:layout_below="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/theme_dark_grey"
+        android:text="今日下班："
+        />
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_below="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp"
+        android:textColor="@color/theme_dark_grey"
+
+        />
+    <Button
+        android:id="@+id/btn_showdetail"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/t1"
+        android:layout_toRightOf="@+id/tv_status"
+        android:layout_marginLeft="20dp"
+        android:background="@color/theme_red"
+        android:text="查 看"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="120dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/t1"
+        android:layout_toRightOf="@+id/tv_status"
+        android:layout_marginLeft="20dp"
+        android:background="@color/theme_red"
+        android:text="开始确认"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+</RelativeLayout>

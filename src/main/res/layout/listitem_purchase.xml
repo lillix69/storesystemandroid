@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:background="@color/bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="71dp">
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/seperator_line" />
+<TextView
+    android:id="@+id/tv_purchasecode"
+    android:layout_width="200dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:layout_below="@+id/line"
+    android:text="单号:"
+    android:textSize="17sp"
+    android:textColor="@color/theme_dark_grey"
+    android:gravity="center_vertical"
+    />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/tv_purchasecode"
+        android:text="入库日期:"
+        android:textSize="17sp"
+        android:textColor="@color/theme_dark_grey"
+
+        />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/tv_purchasecode"
+        android:text="入库人:"
+        android:textSize="17sp"
+        android:textColor="@color/theme_dark_grey"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/tv_date"
+        android:layout_below="@+id/tv_username"
+        android:text="入库物料总数:"
+        android:textSize="17sp"
+        android:textColor="@color/theme_dark_grey"
+        />
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/i_arrow"
+        />
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_cost"
+        android:background="@color/seperator_line" />
+</RelativeLayout>

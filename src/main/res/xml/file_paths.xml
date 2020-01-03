@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path path="Android/data/qinyuanliu.storesystemandroid/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+    <files-path
+        name="images"
+        path="Android/data/com.example.package.name/files/Pictures/OriPicture/" />
+    <external-path
+        name="images"
+        path="Android/data/com.example.package.name/files/Pictures/OriPicture/" />
+    <external-files-path
+        name="images"
+        path="files/Pictures/OriPicture" />
+    <root-path
+        name="images"
+        path="" />
+    <root-path
+        name="images"
+        path="" />
+
+
+
+</paths>

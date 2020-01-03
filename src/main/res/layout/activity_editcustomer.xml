@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/theme_red"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改客户信息"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_marginLeft="15dp"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/i_back" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ordercode_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/topview"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="订单编号" />
+
+        <TextView
+            android:id="@+id/tv_ordercode"
+            style="@style/detail_subtitle_text6"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/ordercode_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="客户姓名(*)" />
+
+        <ImageView
+            android:id="@+id/img0"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            style="@style/detail_subtitle_text3"
+            android:background="@null"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img0"
+            android:hint="请输入客户姓名"
+            android:textColorHint="@color/theme_grey"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tel_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/name_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="客户手机(*)" />
+
+        <ImageView
+            android:id="@+id/img1"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_tel"
+            style="@style/detail_subtitle_text3"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img1"
+            android:hint="请输入客户手机"
+            android:textColorHint="@color/theme_grey"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/receivername_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/tel_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="收件人姓名" />
+
+        <ImageView
+            android:id="@+id/img2"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_receivername"
+            style="@style/detail_subtitle_text3"
+            android:background="@null"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img2"
+            android:hint="请输入收件人姓名"
+            android:textColorHint="@color/theme_grey"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/receivertel_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/receivername_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="收件人手机" />
+
+        <ImageView
+            android:id="@+id/img3"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_receivertel"
+            style="@style/detail_subtitle_text3"
+            android:background="@null"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img3"
+            android:hint="请输入收件人手机"
+            android:textColorHint="@color/theme_grey"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/receiveradd_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/receivertel_view"
+        >
+
+        <TextView
+            android:id="@+id/tadd"
+            style="@style/detail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="收件人地址" />
+
+        <ImageView
+            android:id="@+id/img5"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_receiveradd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/theme_light_grey"
+            android:textSize="17sp"
+            android:gravity="center_vertical|right"
+            android:background="@null"
+            android:layout_toRightOf="@+id/tadd"
+            android:layout_toLeftOf="@+id/img5"
+            android:hint="请输入收件人地址"
+            android:textColorHint="@color/theme_grey"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/remark_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color"
+        android:layout_below="@+id/receiveradd_view"
+        >
+
+        <TextView
+            style="@style/detail_title_text4"
+            android:text="备注" />
+
+        <ImageView
+            android:id="@+id/img6"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_remark"
+            style="@style/detail_subtitle_text3"
+            android:background="@null"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img6"
+            android:hint="请输入备注"
+            android:textColorHint="@color/theme_grey"
+            />
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="确认修改"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@color/theme_red"
+        />
+
+
+</RelativeLayout>

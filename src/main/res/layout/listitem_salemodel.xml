@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/seperator_line" />
+
+    <RelativeLayout
+        android:id="@+id/modelnameview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color">
+
+        <TextView
+            android:id="@+id/t1"
+            style="@style/detail_title_text5"
+            android:text="物料名称" />
+
+        <TextView
+            android:id="@+id/tv_modelname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/t1"
+            android:layout_toLeftOf="@+id/tv_remove"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:maxLines="1"
+            android:textColor="@color/theme_grey"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="移除"
+            android:textColor="@color/theme_blue"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/seperator_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/modelspecview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color">
+
+        <TextView
+            android:id="@+id/t5"
+            style="@style/detail_title_text5"
+            android:text="物料规格" />
+
+        <TextView
+            android:id="@+id/tv_modelspec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/t5"
+           android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:maxLines="1"
+            android:textColor="@color/theme_grey"
+            android:textSize="15sp" />
+
+
+        <View
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/seperator_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/salecountview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color">
+
+        <TextView
+            style="@style/detail_title_text5"
+            android:text="销售数量(*)" />
+
+        <ImageView
+            android:id="@+id/img8"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_salecount"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/img8"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入销售数量"
+            android:inputType="numberDecimal"
+            android:textColor="@color/theme_grey"
+            android:textColorHint="@color/sep_line"
+            android:textSize="15sp" />
+        <View
+            android:id="@+id/line8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/seperator_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/costview"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color">
+
+        <TextView
+            style="@style/detail_title_text5"
+            android:text="销售单价(*)" />
+
+        <ImageView
+            android:id="@+id/img4"
+            style="@style/detail_arrow" />
+
+        <EditText
+            android:id="@+id/edt_cost"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/img4"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入销售单价"
+            android:inputType="numberDecimal"
+            android:textColor="@color/theme_grey"
+            android:textColorHint="@color/sep_line"
+            android:textSize="15sp" />
+        <View
+            android:id="@+id/line9"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+
+            android:background="@color/seperator_line" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

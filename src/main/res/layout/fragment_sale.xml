@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="销售出库"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/filterview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/topview"
+        android:background="@color/date_color"
+        android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:id="@+id/clientview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="客户  "
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_customer"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/t2"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入客户手机/姓名"
+                android:paddingLeft="5dp"
+                android:textColor="@color/theme_dark_grey"
+                android:textColorHint="@color/sep_line"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/statusview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="发货状态  "
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_storestatus"
+                android:layout_width="95dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/t3"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="14sp"
+                android:text="全部"
+                />
+
+            <ImageView
+                android:id="@+id/img_choosestore"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="148dp"
+                android:background="@drawable/arrowdown" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_storestatus"
+                android:text="付款状态  "
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_paystatus"
+                android:layout_width="95dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/t4"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="14sp"
+                android:text="全部"
+                />
+
+            <ImageView
+                android:id="@+id/img_choosepay"
+                android:layout_width="10dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="320dp"
+                android:background="@drawable/arrowdown" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dateview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_search">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="日期  "
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/centerline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_begindate"
+                android:text=" 至 "
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_begindate"
+                android:layout_width="82dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/t1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_enddate"
+                android:layout_width="82dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/centerline"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/theme_dark_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_add"
+                android:background="@color/search_blue"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/theme_red"
+                android:gravity="center"
+                android:text="新增"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listview_sale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filterview"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:divider="@color/white"
+        android:dividerHeight="5dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"></ListView>
+
+    <TextView
+        android:id="@+id/tv_nopower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="当前账号没有操作销售出库的权限"
+        android:textColor="@color/theme_dark_grey"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</RelativeLayout>

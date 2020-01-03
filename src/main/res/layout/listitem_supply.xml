@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/clear"
+    android:id="@+id/supplyview"
+    >
+    <TextView
+        android:id="@+id/tv_supply"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="55dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/theme_dark_grey"
+        />
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_select_bg"
+        />
+
+</RelativeLayout>

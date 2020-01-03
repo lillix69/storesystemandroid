@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:text="计划生产数量："
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_preparecount"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/t1"
+        android:layout_toRightOf="@+id/t2"
+        android:gravity="center"
+        android:hint="请输入"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/t2"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:text="计划生产步骤："
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <qinyuanliu.storesystemandroid.util.FlowRadioGroup
+        android:id="@+id/flowradiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="anasdggcyo" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="2312angcyo" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="1231angcyo" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="angdfcyo" />-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="angadsfdsfasdcyo" />-->
+    </qinyuanliu.storesystemandroid.util.FlowRadioGroup>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--&gt;-->
+    <!--<Button-->
+    <!--android:id="@+id/btn_cancle"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/theme_grey"-->
+    <!--android:gravity="center"-->
+    <!--android:text="取消"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="20sp" />-->
+    <!--<Button-->
+    <!--android:id="@+id/btn_ok"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/theme_green"-->
+    <!--android:gravity="center"-->
+    <!--android:text="确定"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="20sp" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

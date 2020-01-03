@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/bg_color"
+    android:id="@+id/questionitem"
+    >
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="205dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/line"
+        android:text="反馈时间：2019-11-11 12:12"
+        android:textSize="15sp"
+        android:textColor="@color/theme_dark_grey"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+     android:layout_toRightOf="@+id/tv_date"
+        android:text="反馈人："
+        android:textSize="15sp"
+        android:textColor="@color/theme_dark_grey"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/tv_date"
+        android:text="标题："
+        android:textSize="15sp"
+        android:textColor="@color/theme_dark_grey"
+android:maxLines="1"
+        android:ellipsize="end"
+
+        />
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/i_arrow" />
+</RelativeLayout>
