@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        applicationId "qinyuanliu.storesystemandroid"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 34
+        versionName "2.13"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                //这里修改apk文件名
+                def fileName = outputFile.name.replace("app","storesystem")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'storesystem'
+            keyPassword '123456'
+            storeFile file('/Users/qinyuanliu/Documents/storesystemdemo/storesystemkeystore.jks')
+            storePassword '123456'
+        }
+
+        debug {
+            keyAlias 'storesystem'
+            keyPassword '123456'
+            storeFile file('/Users/qinyuanliu/Documents/storesystemdemo/storesystemkeystore.jks')
+            storePassword '123456'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile files('src/main/java/qinyuanliu/storesystemandroid/util/zxing/core-3.1.0.jar')
+    compile files('src/main/java/qinyuanliu/storesystemandroid/http/util/gson-2.8.0.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile files('libs/MiPush_SDK_Client_3_6_9.jar')
+    compile 'com.longsh:OptionFrame:1.0.0'
+}
